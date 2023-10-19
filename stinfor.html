@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript" src="stvalidation.js">
+
+    </script>
+
+</head>
+<body>
+    <h2>Student Information</h2>
+    <form method="post" name="myform"  action="stinsert.php" onsubmit="return(stvalidation())"required>
+Index Number :<input type="text" name="stindex"><br>
+Student Name :<input type="text" name="stname"><br>
+<label for="course">Enrolled Courses :</label>
+<select name="course" id="course">
+    <option value="Courses1">Courses1</option>
+    <option value="Courses2">Courses2</option>
+    <option value="Courses3">Courses3</option>
+</select><br>
+Applied Date :<input type="date" id="applieddate" name="applieddate"><br>
+Status :<input type="text" name="status"><br><br>
+
+<input type="submit"  value="Submit">
+</form>
+</body>
+</html>
